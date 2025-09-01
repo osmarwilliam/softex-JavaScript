@@ -1,0 +1,13 @@
+{
+  "name": "conversormoedas",
+  "version": "1.0.0",
+  "description": "Um simples conversor de algumas moedas específicas, que consome uma api e usa a biblioteca `readline-sync` para interagir diretamente pelo terminal",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

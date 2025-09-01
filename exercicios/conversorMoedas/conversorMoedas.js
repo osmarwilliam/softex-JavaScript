@@ -26,7 +26,7 @@ async function getExchangeRate(daMoeda, paraMoeda) {
 
 // getExchangeRate("USD", "BRL")
 
-const readlineSync = require('readline-sync');
+import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js' 
 
 async function main() {
     let valor; // undefined, portanto é falsy iniciamente

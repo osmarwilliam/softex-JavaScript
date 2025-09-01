@@ -1,4 +1,4 @@
-const rl = require('readline-sync');
+import rl from '../node_modules/readline-sync/lib//readline-sync.js';
 
 function espacamento(){
     console.log("\n_______________________\n");
