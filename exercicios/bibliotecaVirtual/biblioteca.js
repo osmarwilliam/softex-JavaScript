@@ -4,7 +4,7 @@ import {adicionarLivros, listarLivros, emprestarLivro, devolverLivro} from './mo
 function bibliotecaVirtual(){
     let opcoes = ["Adicionar Livro", "Listar Livros", "Emprestar Livro", "Devolver Livro"]; 
     let optionSelectByUser = 1;
-    
+
     let listaLivros = []
 
     while(optionSelectByUser != -1){
