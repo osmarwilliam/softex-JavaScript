@@ -8,7 +8,7 @@ function armazenaEstoque(estoque){
     const nome = (rl.question("Escreva o nome do produto que ira ser armazenado: ")).toLowerCase()  ; 
     const quantidadeDisponivel = Number(rl.question("Escreva a quantidade de : ")); 
     const precoUnitario = Number(rl.question("Escreva o preco unitario desse produto: "));    
-    pedido = {
+    const pedido = {
         nome : nome,
         quantidadeDisponivel : quantidadeDisponivel,
         precoUnitario : precoUnitario
@@ -79,7 +79,6 @@ function validarQuantidadeSolicitada(estoque, nomeProdutoPedido){
             qtdUsuario = undefined;
         }
     }
-
     estoque[pos].quantidadeDisponivel -= qtdUsuario;
     if (estoque[pos].quantidadeDisponivel == 0) {
         estoque.splice(pos, 1); // se a quantidade zerou, então eu removo o produto do estoque
@@ -93,17 +92,14 @@ function receberPedido(estoque, pedidoCliente){
         espacamento();
         return;
     }
-
     let [nomeProdutoPedido, valorUnitario] = validarNome(estoque);
     if (nomeProdutoPedido == undefined){
         espacamento();
         validarPedido(pedidoCliente);
         return;
     } 
-    
     let quantidaSolicitadaUsuario = validarQuantidadeSolicitada(estoque, nomeProdutoPedido);
     espacamento();
-    
     let condition = rl.question("\nDeseja adicionar outro produto? (s/n) ")
     
     pedido = {
