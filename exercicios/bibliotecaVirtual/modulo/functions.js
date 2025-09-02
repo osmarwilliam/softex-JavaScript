@@ -1,10 +1,10 @@
-import rl from "../calculadoraModular/readline-sync"
+import rl from '../../node_modules/readline-sync/lib/readline-sync.js'
 
 function adicionarLivros(listaLivros){
     let id = rl.question("Digite o id do livro: "); 
     let titulo = rl.question("Digite o titulo do livro: "); 
     let autor = rl.question("Digite o autor do livro: "); 
-    livro = {
+    const livro = {
         id : id,
         titulo : titulo,
         autor : autor,
@@ -14,25 +14,32 @@ function adicionarLivros(listaLivros){
 }
 
 function listarLivros(listaLivros){
-    listaLivros.forEach(element => {
-        for (chave in element){
-            console.log(`titulo`);
-        }
+    console.log("\n!!!LISTA DE LIVROS!!!\n");
+    listaLivros.forEach(livros => {
+        console.log(`    titulo: ${livros.titulo}, autor: ${livros.autor}, disponibilidade = ${(livros.disponivel == true) ? "presente": "não disponivel"}`);
     });
 }
 
 function emprestarLivro(listaLivros){
     listarLivros(listaLivros);
-    let nome = rl.question("Digite o nome do livro: ");
-    let pos = -1;
-    for (let i = 0; i < listaLivros.length; i++){
-        if (nome == listaLivros[i].nome){
-            listaLivros[i].disponivel = false
+    let nome = rl.question("Digite o titulo do livro: ");
+    console.log(listaLivros);
+    let disponibilidadeLivro = false;
+
+    listaLivros.forEach(livros => {
+        if (livros.titulo === nome){
+            livros.disponivel = false;
+            disponibilidadeLivro = true;
         }
-    }
-    if (pos == -1){
-        console.log("Livro não achado.")
-    }
+    })
+
+    if (disponibilidadeLivro) console.log("Livro achado!!\n");
+    else console.log("Livro não achado.");
 }
 
-export {adicionarLivros, listarLivros, emprestarLivro};
+function devolverLivro(listaLivros){
+    let nome = rl.question;
+
+}
+
+export {adicionarLivros, listarLivros, emprestarLivro, devolverLivro};
