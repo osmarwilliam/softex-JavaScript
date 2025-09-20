@@ -1,1 +1,0 @@
-{"version":3,"file":"livros.d.ts","sourceRoot":"","sources":["../../../src/bibliotecaDigital/entidades/livros.ts"],"names":[],"mappings":"AAEA,qBAAa,MAAM;IACf,MAAM,EAAG,MAAM,CAAC;IAChB,QAAQ,EAAG,MAAM,CAAA;gBAEL,MAAM,EAAG,MAAM,EAAE,QAAQ,EAAG,MAAM;CAMjD"}

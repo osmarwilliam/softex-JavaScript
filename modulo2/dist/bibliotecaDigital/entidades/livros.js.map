@@ -1,1 +1,0 @@
-{"version":3,"file":"livros.js","sourceRoot":"","sources":["../../../src/bibliotecaDigital/entidades/livros.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,MAAM;IACf,MAAM,CAAU;IAChB,QAAQ,CAAS;IAEjB,YAAY,MAAe,EAAE,QAAiB;QAC1C,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;QACrB,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;IAE7B,CAAC;CAEJ"}
