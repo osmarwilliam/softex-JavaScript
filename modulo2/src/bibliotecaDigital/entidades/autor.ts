@@ -4,7 +4,7 @@ export class Autor {
     nomeAutor : string;
     idadeAutor : number;
     idAutor : number;
-    livrosAutor : Livros[]
+    livrosAutor : Livros[]  
 
     constructor(nome : string, idade : number, id : number){
         this.nomeAutor = nome;
@@ -15,6 +15,12 @@ export class Autor {
 
     adicionarLivros(livro : Livros){
         return this.livrosAutor.push(livro);
+    }
+
+    exibirLivros() : void { 
+        this.livrosAutor.forEach((element, chave) => {
+            console.log(`${this.nomeAutor} livro ${chave+1}: ${element.nomeBook}`);
+        });
     }
 
 }
