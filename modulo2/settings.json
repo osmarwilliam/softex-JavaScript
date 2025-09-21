@@ -72,5 +72,5 @@
     "TypeScript": "npx ts-node --files"
   },
   // Material icon theme
-  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.hidesExplorerArrows": true
 }
