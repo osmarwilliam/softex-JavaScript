@@ -10,7 +10,4 @@ export class Funcionarios {
         this.numero = numero || "não temos acesso ao numero desse funcionario";
         this.idade = idade || "não temos acesso a idade desse funcionario!";
     }
-
-
-
 }
