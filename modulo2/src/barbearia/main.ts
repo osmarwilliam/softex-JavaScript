@@ -2,7 +2,7 @@ import { Funcionarios } from "./entidades/funcionarios.js";
 import { Clientes } from "./entidades/cliente.js";
 import { TiposCortes } from "./entidades/tipoCorte.js";
 
-// criando o clente
+// criando o cliente
 
 const cliente1 = new Clientes("osmar", 17);
 cliente1.dadosCliente();
